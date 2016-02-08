@@ -68,7 +68,7 @@ sub _coerce_by_collection_format {
 }
 
 sub _is_byte_string { $_[0] =~ /^[A-Za-z0-9\+\/\=]+$/; }
-sub _is_date        { $_[0] =~ qr/^(\d+)-(\d+)-(\d+)$/io; }
+sub _is_date        { $_[0] =~ qr/^(\d+)-(\d+)-(\d+)$/i; }
 
 sub _is_number {
   return unless $_[0] =~ /^-?\d+(\.\d+)?$/;
